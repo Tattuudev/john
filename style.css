@@ -1,0 +1,240 @@
+body {
+  font-family: "Heebo", sans-serif;
+  /* font-family: "League Spartan", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif; */
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+#header {
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  background-color: #18181881;
+}
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+.nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav li {
+  list-style: none;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 50px 0 0;
+}
+#hero {
+  margin-top: 158px;
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero_content .title {
+  width: 506px;
+  height: 105px;
+  font-size: 44px;
+  font-weight: 700;
+}
+.hero_content .text {
+  margin-top: 40px;
+  width: 497px;
+  height: 66px;
+  font-weight: 400;
+}
+.hero_content button {
+  margin-top: 38px;
+  width: 208px;
+  height: 47px;
+  border-radius: 2px;
+  background: var(--primary, #ff6464);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+}
+.hero_content button:hover {
+  transition: 1s;
+  transform: scale(1.3);
+}
+.hero img:hover {
+  transition: 1s;
+  transform: scale(1.3);
+}
+/* hover button */
+.btn-11 {
+  border: none;
+  background: rgb(251, 33, 117);
+  background: linear-gradient(
+    0deg,
+    rgba(251, 33, 117, 1) 0%,
+    rgba(234, 76, 137, 1) 100%
+  );
+  color: #fff;
+  overflow: hidden;
+}
+.btn-11:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.btn-11:before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #fff;
+  animation: shiny-btn1 3s ease-in-out infinite;
+}
+.btn-11:hover {
+  opacity: 0.7;
+}
+.btn-11:active {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+@-webkit-keyframes shiny-btn1 {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  81% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}
+/* hover button */
+
+#post {
+  padding: 80px 0;
+  background: #edf7fa;
+  margin-top: 80px;
+}
+.post_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.post_top h2 {
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--dark-color, #21243d);
+}
+.post_top h4 {
+  font-size: 16px;
+  font-weight: 400px;
+  color: var(--secondry, #00a8cc);
+}
+.post_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.post_block {
+  background-color: #fff;
+  width: 418px;
+  height: 295px;
+  padding: 20px;
+  border-radius: 4px;
+}
+.post_block h2 {
+  width: 374px;
+  height: 85px;
+  font-size: 26px;
+  font-weight: 700;
+}
+.post_h {
+  font-size: 18px;
+  font-weight: 400;
+}
+.post_txt {
+  width: 368px;
+  height: 117px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 20px 0;
+}
+.container .work {
+  display: flex;
+  align-items: flex-start;
+}
+.work {
+  margin: 20px 0;
+}
+.work_info {
+  margin-left: 20px;
+}
+.work_info h1:hover {
+  transition: 1s;
+  transform: scale(1.1);
+  font-size: 22px;
+}
+.featured {
+  margin: 22px 0;
+}
+.work_img:hover {
+  transition: 1s;
+  transform: scale(1.3);
+}
+.work_year {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.work_year h4 {
+  width: 62px;
+  height: 25px;
+  border-radius: 16px;
+  background: #142850;
+  color: #fff;
+  text-align: center;
+}
+.work_year h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--light, #8695a4);
+}
+.work_info p {
+  width: 594px;
+  height: 93px;
+  margin-top: 22px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  margin: 70px 0;
+}
+.footer_img {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  /* margin: 0 15px; */
+}
+.footer_img:hover {
+  transition: 1s;
+  transform: scale(1.2);
+}
+.foot {
+  text-align: center;
+}
